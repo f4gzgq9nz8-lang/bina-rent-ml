@@ -30,25 +30,28 @@ Python_Classes/
 
 ## How to Run the Project
 
-1. Install dependencies:
+```
 pip install -r requirements.txt
-
-markdown
 
 
 2. Train the model:
-python model.py
+```
 
-markdown
+python model.py
 
 
 3. Run the API:
-uvicorn api:app --reload
 
-markdown
+```
+uvicorn api:app --reload
 
 
 4. Open in browser:
+
+
 http://127.0.0.1:8000/docs
 
 
+
+
+1. Install dependencies:
