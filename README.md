@@ -31,52 +31,11 @@ Python_Classes/
 ## How to Run the Project
 
 1. Install dependencies:
+
+2. python model.py
+
+3.uvicorn api:app --reload
+ 4.http://127.0.0.1:8000/docs
+
 ```bash
-pip install -r requirements.txt
-Train the model:
-
-bash
-Kodu kopyala
-python model.py
-Run the API:
-
-bash
-Kodu kopyala
-uvicorn api:app --reload
-Open in browser:
-
-arduino
-Kodu kopyala
-http://127.0.0.1:8000/docs
-Example Usage
-After running the API, you can send a POST request to the /predict endpoint with apartment features:
-
-json
-Kodu kopyala
-{
-  "rooms": 2,
-  "area": 55,
-  "floor": 3,
-  "total_floors": 5,
-  "repair_type": "Yeni tikili",
-  "building_type": "Bakixanov",
-  "location": "Bakıda"
-}
-The API will return the predicted monthly rent price, e.g.:
-
-json
-
-{
-  "predicted_price": 423.5
-}
-Notes
-Make sure the evler.csv file exists in data/raw/ before training the model.
-
-This project uses a Random Forest model saved as model.joblib.
-
-For API testing, you can use Swagger at http://127.0.0.1:8000/docs or Postman.
-
-yaml
-
-git commit -m "Update README with full project instructions"
-git push
+pip install -r requiremen ts.txt
